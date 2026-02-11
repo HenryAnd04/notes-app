@@ -1,0 +1,75 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  padding: 1rem 2rem;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e5e5e5;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* Título */
+header h1 {
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+/* Navegación */
+nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+/* Links */
+nav a {
+  text-decoration: none;
+  color: #374151;
+  font-size: 1.3rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+/* Hover elegante */
+nav a:hover {
+  color: #2563eb;
+}
+
+/* Línea animada debajo */
+nav a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: #2563eb;
+  left: 0;
+  bottom: -4px;
+  transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  nav {
+    gap: 1rem;
+  }
+}
