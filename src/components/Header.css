@@ -19,7 +19,7 @@ header {
 }
 
 /* Título */
-header h1 {
+.title {
   font-size: 1.7rem;
   font-weight: 600;
   color: #111827;

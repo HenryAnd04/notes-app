@@ -1,0 +1,57 @@
+.home-container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Grid de notas */
+.notes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+/* Tarjeta individual */
+.note-card {
+  background: #ffffff;
+  padding: 1.2rem;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  transition: all 0.25s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+/* Hover elegante */
+.note-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+}
+
+/* Texto principal */
+.note-body {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #111827;
+  line-height: 1.4;
+}
+
+/* Usuario */
+.note-user {
+  font-size: 0.85rem;
+  color: #6b7280;
+  align-self: flex-end;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .home-container {
+    padding: 1rem;
+  }
+
+  .note-card {
+    padding: 1rem;
+  }
+}
